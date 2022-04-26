@@ -6,8 +6,10 @@ This project is used to control the Enervent EDA over ESPHome.
 #### Hardware used in this project:
 - Wemos D1 Mini (later just Wemos)
 - TTL-MAX485 converter
-- Enervent EDA automation
+- AHU with Enervent EDA automation
 - RJ14 cable to connect EDA automation to TTL converter. Same cable/connector as used in the Enervent EDA panel.
+- proto board, screw terminals, pin headers and wires to make internal connections on board
+- micro usb cable with power
 
 #### Config
 - enervent.yaml (configuration file for ESPHome)
@@ -17,7 +19,7 @@ This project is used to control the Enervent EDA over ESPHome.
 - Wemos **G pin** -> **GND pin** of TTL converter
 - RJ14 cable **Green** wire -> converter **A+** (NOTE: you have to find out these if using a different cable/connector)
 - RJ14 cable **Yellow** wire -> converter **B-** (NOTE: you have to find out these if using a different cable/connector)
-- Added screw terminal to TTL converter to help connect wires from AHU.
+- Added screw terminal to TTL converter to help connect wires from AHU (Air Handling Unit).
 - Wemos and TTL converter is combined to proto board with headers to help maintenance.
 
 #### Links
