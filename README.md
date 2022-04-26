@@ -15,9 +15,17 @@ This project is used to control the Enervent EDA over ESPHome.
 - Wemos **RX pin** GPIO13 (**D7**) -> **RX pin** of TTL converter
 - Wemos **5V pin** -> **VCC pin** of TTL converter
 - Wemos **G pin** -> **GND pin** of TTL converter
-- RJ14 cable **Green** wire -> converter **A** (NOTE: you have to find out these if using a different cable/connector)
-- RJ14 cable **Yellow** wire -> converter **B** (NOTE: you have to find out these if using a different cable/connector)
+- RJ14 cable **Green** wire -> converter **A+** (NOTE: you have to find out these if using a different cable/connector)
+- RJ14 cable **Yellow** wire -> converter **B-** (NOTE: you have to find out these if using a different cable/connector)
+- Added screw terminal to TTL converter to help connect wires from AHU.
+- Wemos and TTL converter is combined to proto board with headers to help maintenance.
 
 #### Links
 
 - TTL-MAX485 converter: https://www.aliexpress.com/item/1005001346792286.html
+
+
+#### Images
+Wemos TTL proto:
+
+<img src="./img/wemos_ttl_proto.png" width="300">
