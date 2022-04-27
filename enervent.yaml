@@ -70,6 +70,13 @@ switch:
     bitmask: 1
   - platform: modbus_controller
     modbus_controller_id: enervent
+    id: garage_central_vacuum
+    name: "Garage - Central Vacuum Cleaner"
+    register_type: coil
+    address: 5
+    bitmask: 1
+  - platform: modbus_controller
+    modbus_controller_id: enervent
     id: garage_manualboost
     name: "Garage - Manual Boost"
     register_type: coil
@@ -82,6 +89,24 @@ switch:
     register_type: coil
     address: 12
     bitmask: 1
+
+  ## alarms:
+  - platform: modbus_controller
+    modbus_controller_id: enervent
+    id: garage_alarma
+    name: "Garage - Alarm A"
+    device_class: switch
+    entity_category: diagnostic
+    register_type: read
+    address: 41
+  - platform: modbus_controller
+    modbus_controller_id: enervent
+    id: garage_alarmb
+    device_class: switch
+    entity_category: diagnostic
+    name: "Garage - Alarm B"
+    register_type: read
+    address: 42
 
 sensor:
 
